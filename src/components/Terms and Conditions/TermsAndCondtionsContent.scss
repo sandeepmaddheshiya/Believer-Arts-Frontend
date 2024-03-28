@@ -1,0 +1,50 @@
+.about-us-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  
+    .about-us-content {
+      display: flex;
+      align-items: center;
+  
+      .left-content {
+        flex: 1;
+      }
+  
+      .right-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+  
+        .company-image {
+          width: 100%;
+          max-width: 200px;
+          margin-bottom: 20px;
+        }
+  
+        .social-icons {
+          // Style your social icons container here
+        }
+  
+        .map {
+          // Style your map container here
+        }
+      }
+    }
+  
+    .about-us-heading {
+      color: #333;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  
+    .about-us-content p {
+      margin-bottom: 15px;
+    }
+    
+  }
+  

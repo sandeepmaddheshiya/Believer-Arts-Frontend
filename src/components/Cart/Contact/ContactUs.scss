@@ -1,0 +1,132 @@
+.contact-us-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow flex items to wrap */
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 6rem auto; /* Adding top and bottom margin of 20% */
+  padding: 2rem 1rem; /* Increasing top and bottom padding to increase height */
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  .left-content {
+    flex-basis: 100%; /* Make left content take full width initially */
+    margin-bottom: 20px; /* Add bottom margin to separate from the right content */
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      div {
+        margin-bottom: 20px;
+
+        label {
+          font-weight: bold;
+          color: #333;
+        }
+
+        input[type='text'],
+        input[type='email'],
+        textarea {
+          width: 100%;
+          padding: 10px;
+          font-size: 16px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          transition: border-color 0.3s ease;
+
+          &:focus {
+            border-color: #007bff;
+            outline: none;
+          }
+        }
+
+        textarea {
+          resize: vertical;
+          height: 150px; /* Adjust the height of the message box */
+        }
+      }
+
+      button[type='submit'] {
+        width: 100%;
+        padding: 10px;
+        background-color: #8e2de2; /* Updated button background color */
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #8d2de2ca; /* Adjusted hover color */
+        }
+      }
+    }
+  }
+
+  .right-content {
+    flex-basis: 100%; /* Make right content take full width initially */
+    margin-bottom: 20px; /* Add bottom margin to separate from the left content */
+
+    .company-image {
+      max-width: 30%;
+      height: auto;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+
+      .icon {
+        font-size: 24px;
+        color: #007bff;
+        margin: 0 10px;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #0056b3;
+        }
+      }
+    }
+
+    .map-container {
+      position: relative;
+      height: 80%; /* Increase the height of the map container */
+      width: 60%;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  @media (min-width: 768px) { /* Apply styles only for screens wider than 768px (tablets and above) */
+    .left-content {
+      flex-basis: 50%; /* Make left content take half of the width */
+      margin-bottom: 0; /* Reset bottom margin */
+    }
+
+    .right-content {
+      flex-basis: 45%; /* Make right content take half of the width */
+      margin-bottom: 0; /* Reset bottom margin */
+      margin-left: 20px; /* Add left margin to create space between the left and right content */
+    }
+  }
+}

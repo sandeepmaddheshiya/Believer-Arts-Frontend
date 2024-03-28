@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { MdClose } from "react-icons/md";
-import "./Search.scss";
-import useFetch from "../../../hooks/useFetch";
 import { useNavigate } from "react-router-dom";
+import useFetch from "../../../hooks/useFetch";
+import "./Search.scss";
 
 const Search = ({ setSearchModal }) => {
     const [query, setQuery] = useState("");
@@ -56,7 +56,7 @@ const Search = ({ setSearchModal }) => {
                                     src={
                                         process.env
                                             .REACT_APP_STRIPE_APP_DEV_URL +
-                                        item.attributes.image.data[0].attributes
+                                        item.attributes.img.data[0].attributes
                                             .url
                                     }
                                 />

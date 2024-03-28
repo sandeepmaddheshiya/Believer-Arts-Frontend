@@ -1,10 +1,10 @@
+import { loadStripe } from "@stripe/stripe-js";
 import React, { useContext } from "react";
-import { MdClose } from "react-icons/md";
 import { BsCartX } from "react-icons/bs";
+import { MdClose } from "react-icons/md";
+import { makePaymentRequest } from "../../utils/api";
 import { Context } from "../../utils/context";
 import CartItem from "./CartItem/CartItem";
-import { loadStripe } from "@stripe/stripe-js";
-import { makePaymentRequest } from "../../utils/api";
 
 import "./Cart.scss";
 
@@ -24,8 +24,8 @@ const Cart = () => {
             await stripe.redirectToCheckout({
                 sessionId: res.data.stripeSession.id,
             });
-        } catch (err) {
-            console.log(err);
+        } catch (error) {
+            console.log(error);
         }
     };
 
@@ -64,7 +64,7 @@ const Cart = () => {
                             <div className="subtotal">
                                 <span className="text">Subtotal:</span>
                                 <span className="text total">
-                                    &#8377;{cartSubTotal}
+                                    $ {cartSubTotal}
                                 </span>
                             </div>
                             <div className="button">

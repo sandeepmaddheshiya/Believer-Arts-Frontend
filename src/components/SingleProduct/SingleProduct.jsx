@@ -1,16 +1,16 @@
 import { useContext, useState } from "react";
-import { Context } from "../../utils/context";
-import { useParams } from "react-router-dom";
-import useFetch from "../../hooks/useFetch";
-import RelatedProducts from "./RelatedProducts/RelatedProducts";
 import {
+    FaCartPlus,
     FaFacebookF,
-    FaTwitter,
     FaInstagram,
     FaLinkedinIn,
     FaPinterest,
-    FaCartPlus,
+    FaTwitter,
 } from "react-icons/fa";
+import { useParams } from "react-router-dom";
+import useFetch from "../../hooks/useFetch";
+import { Context } from "../../utils/context";
+import RelatedProducts from "./RelatedProducts/RelatedProducts";
 import "./SingleProduct.scss";
 
 const SingleProduct = () => {
@@ -40,14 +40,14 @@ const SingleProduct = () => {
                         <img
                             src={
                                 process.env.REACT_APP_STRIPE_APP_DEV_URL +
-                                product.image.data[0].attributes.url
+                                product.img.data[0].attributes.url
                             }
                         />
                     </div>
                     <div className="right">
                         <span className="name">{product.title}</span>
-                        <span className="price">&#8377;{product.price}</span>
-                        <span className="desc">{product.description}</span>
+                        <span className="price">$ {product.price}</span>
+                        <span className="desc">{product.desc}</span>
 
                         <div className="cart-buttons">
                             <div className="quantity-buttons">
@@ -91,10 +91,12 @@ const SingleProduct = () => {
                         </div>
                     </div>
                 </div>
-                <RelatedProducts
-                    productId={id}
-                    categoryId={product.categories.data[0].id}
-                />
+                <div style={{ marginTop: "20%" }}>
+                    <RelatedProducts
+                        productId={id}
+                        categoryId={product.categories.data[0].id}
+                    />
+                </div>
             </div>
         </div>
     );

@@ -1,10 +1,10 @@
-import React, { useEffect, useContext } from "react";
-import "./Home.scss";
-import Banner from "./Banner/Banner";
-import Category from "./Category/Category";
-import Products from "../Products/Products";
+import React, { useContext, useEffect } from "react";
 import { fetchDataFromApi } from "../../utils/api";
 import { Context } from "../../utils/context";
+import Products from "../Products/Products";
+import Banner from "./Banner/Banner";
+import Category from "./Category/Category";
+import "./Home.scss";
 
 const Home = () => {
     const { products, setProducts, categories, setCategories } =

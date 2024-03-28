@@ -1,12 +1,11 @@
-import { useEffect, useState, useContext } from "react";
-import { useNavigate } from "react-router-dom";
-import { TbSearch } from "react-icons/tb";
+import { useContext, useEffect, useState } from "react";
 import { CgShoppingCart } from "react-icons/cg";
-import { AiOutlineHeart } from "react-icons/ai";
-import "./Header.scss";
-import Search from "./Search/Search";
+import { TbSearch } from "react-icons/tb";
+import { useNavigate } from "react-router-dom";
 import { Context } from "../../utils/context";
 import Cart from "../Cart/Cart";
+import "./Header.scss";
+import Search from "./Search/Search";
 
 const Header = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -36,14 +35,15 @@ const Header = () => {
                     <ul className="left">
                         <li onClick={() => navigate("/")}>Home</li>
                         <li onClick={() => navigate("/about")}>About</li>
-                        <li>Categories</li>
+                        
+                        <li onClick={() => navigate("/contact")}>Contact</li>
                     </ul>
                     <div className="center" onClick={() => navigate("/")}>
-                        JSDEVSTORE.
+                        Believer Arts.
                     </div>
                     <div className="right">
                         <TbSearch onClick={() => setSearchModal(true)} />
-                        <AiOutlineHeart />
+                        {/* <AiOutlineHeart /> */}
                         <span
                             className="cart-icon"
                             onClick={() => setShowCart(true)}

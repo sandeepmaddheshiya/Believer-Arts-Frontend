@@ -1,0 +1,56 @@
+.form-container {
+    max-width: 600px; /* Increased max-width for a larger form */
+    margin: 20px auto; /* Added margin to top and bottom */
+    padding: 30px; /* Increased padding for better spacing */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Added box shadow for depth */
+  }
+  
+  .form-title {
+    text-align: center;
+    margin-bottom: 20px; /* Added margin to create space between title and form */
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-label {
+    margin-bottom: 10px; /* Adjusted margin for better alignment */
+    font-size: 16px;
+  }
+  
+  .form-input {
+    width: 100%; /* Ensures input fields take up full width */
+    padding: 10px; /* Increased padding for better input appearance */
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    margin-bottom: 10px; /* Added margin to create space between inputs */
+  }
+  
+  .submit-button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px; /* Adjusted padding for button */
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px; /* Added margin to create space between inputs and button */
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive adjustments */
+  @media only screen and (max-width: 600px) {
+    .form-input,
+    .submit-button {
+      width: auto; /* Revert input fields and button to their default width */
+    }
+  }
+  
