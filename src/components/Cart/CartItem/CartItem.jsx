@@ -17,10 +17,8 @@ const CartItem = () => {
                 >
                     <div className="image-container">
                         <img
-                            src={
-                                process.env.REACT_APP_STRIPE_APP_DEV_URL +
-                                item.attributes.img.data[0].attributes.url
-                            }
+                             src={item?.attributes?.img?.data?.attributes?.formats?.large?.url}
+                             alt={item.attributes.title}
                         />
                     </div>
                     <div className="prod-details">

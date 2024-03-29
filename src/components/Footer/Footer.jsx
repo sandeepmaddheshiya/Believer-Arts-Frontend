@@ -32,10 +32,12 @@ const Footer = () => {
                 </div>
                 <div className="col">
                     <div className="title">Categories</div>
-                    <span className="text" onClick={() => navigate(`/category/5`)}>Calligraphy Verse Lettering</span>
-                    <span className="text"onClick={() => navigate(`/category/6`)}>Portraits Sketch</span>
-                    <span className="text"onClick={() => navigate(`/category/7`)}>Landscape Sketch</span>
-                    <span className="text"onClick={() => navigate(`/category/8`)}>Sketch with Verses</span>
+                    <span className="text" onClick={() => navigate(`/category/1`)}>Calligraphy Verse Lettering</span>
+                    <span className="text"onClick={() => navigate(`/category/2`)}>Portraits Sketch</span>
+                    <span className="text"onClick={() => navigate(`/category/3`)}>Landscape Sketch</span>
+                    <span className="text"onClick={() => navigate(`/category/4`)}>Sketch With Verses</span>
+                    <span className="text"onClick={() => navigate(`/category/5`)}>Personalised Orders</span>
+                    <span className="text"onClick={() => navigate(`/category/6`)}>Previous Works</span>
                    
                 </div>
                 <div className="col">

@@ -14,8 +14,7 @@ const Category = ({ categories }) => {
                     >
                         <img
                             src={
-                                process.env.REACT_APP_STRIPE_APP_DEV_URL +
-                                item.attributes.img.data.attributes.url
+                                item?.attributes?.img?.data[0]?.attributes?.formats?.large?.url
                             }
                         />
                     </div>
