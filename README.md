@@ -75,6 +75,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
  ![www believerarts com_ (1)](https://github.com/sandeepmaddheshiya/Believer-Arts-Frontend/assets/113048079/494833e2-e69a-4bfb-9629-6d346a5db100)
 
 - Mobile View
-![www believerarts com_](https://github.com/sandeepmaddheshiya/Believer-Arts-Frontend/assets/113048079/756e394f-4b4e-45e7-ab80-30e1e0cfbbc7)
+ ![www believerarts com_](https://github.com/sandeepmaddheshiya/Believer-Arts-Frontend/assets/113048079/756e394f-4b4e-45e7-ab80-30e1e0cfbbc7)
 
 
